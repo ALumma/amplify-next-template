@@ -11,8 +11,8 @@ import "@aws-amplify/ui-react/styles.css";
 Amplify.configure(outputs);
 
 const client = generateClient<Schema>();
-const testvar = process.env.NEXT_PUBLIC_test;
-console.log("ENV:", process.env);
+const testVar = process.env.NEXT_PUBLIC_TEST;
+console.log('Test var:', testVar);
 export default function App() {
   const [todos, setTodos] = useState<Array<Schema["Todo"]["type"]>>([]);
 
